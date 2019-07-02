@@ -1,7 +1,5 @@
-body{
-  background: pink;
-}
-.borderAzul
+
+.fondoAzul
 {
-  border: 5px solid ligthblue;
+  background: :  red !important;
 }

@@ -54,7 +54,7 @@
     <li *ngSwitchCase="'green'"[ngStyle]="{background:color, 'color':'white','pading':'20px'}"> Es de color VERDE </li>
   </ul>
   <ul [ngSwitch]="color">
-    <li *ngSwitchCase="'blue'"[ngStyle]="{background:color, 'color':'white','pading':'20px'}"> Es de color VERDE </li>
+    <li *ngSwitchCase="'blue'"[ngStyle]="{background:color, 'color':'white','pading':'20px'}"> Es de color AZUL </li>
   </ul>
 </div>
 
@@ -65,7 +65,7 @@
   <input type="text" [(ngModel)]="color_seleccionado" />
 <strong>Color elegido</strong>
   <pre [style.border] = "color_seleccionado == 'red' ? '5px solid black' : '1px solid white'"
-  [class.borderAzul]="color_seleccionado == 'blue'">{{color_seleccionado}}</pre>
+  [ngClass]="{fondoAzul: color_seleccionado=='blue'}">{{color_seleccionado}}</pre>
 </div>
 <div [ngStyle]="{background:color_seleccionado,'width' :'200px','height':'200px', 'float':'right', 'margin-right': '45%'}"></div>
 <div style ="clear:both"></div>
