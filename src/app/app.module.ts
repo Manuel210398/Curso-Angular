@@ -10,6 +10,7 @@ import {routing, appRoutingProviders} from './app.routing';
 import {HomeComponent} from './home/home.component';
 import {ContactoComponent} from './contacto/contacto.component';
 import {ConversorPipes} from './pipes/conversor.pipe';
+
 import { CochesComponent} from './coches/coches.component';
 @NgModule({
   declarations: [
