@@ -9,14 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import {routing, appRoutingProviders} from './app.routing';
 import {HomeComponent} from './home/home.component';
 import {ContactoComponent} from './contacto/contacto.component';
-
+import {ConversorPipes} from './pipes/conversor.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     FrutaComponent,
     EmpleadoComponent,
     HomeComponent,
-    ContactoComponent
+    ContactoComponent,
+    ConversorPipes
   ],
   imports: [
     BrowserModule,
