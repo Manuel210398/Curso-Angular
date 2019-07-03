@@ -5,18 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FrutaComponent} from './fruta/fruta.component';
 import {EmpleadoComponent} from './empleado/empleado.component';
+import { HttpClientModule } from '@angular/common/http';
+import {routing, appRoutingProviders} from './app.routing';
+import {HomeComponent} from './home/home.component';
+import {ContactoComponent} from './contacto/contacto.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     FrutaComponent,
-    EmpleadoComponent
+    EmpleadoComponent,
+    HomeComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    routing
   ],
-  providers: [],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

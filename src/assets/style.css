@@ -3,3 +3,7 @@
 {
   background: :  red !important;
 }
+.activado{
+  font-weight: bold;
+  background: yellow;
+}
