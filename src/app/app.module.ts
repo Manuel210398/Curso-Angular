@@ -10,7 +10,7 @@ import {routing, appRoutingProviders} from './app.routing';
 import {HomeComponent} from './home/home.component';
 import {ContactoComponent} from './contacto/contacto.component';
 import {ConversorPipes} from './pipes/conversor.pipe';
-
+import { PlantillasComponent} from './plantillas/plantillas.component';
 import { CochesComponent} from './coches/coches.component';
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { CochesComponent} from './coches/coches.component';
     HomeComponent,
     ContactoComponent,
     ConversorPipes,
-    CochesComponent
+    CochesComponent,
+    PlantillasComponent
   ],
   imports: [
     BrowserModule,

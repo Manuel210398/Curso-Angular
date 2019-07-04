@@ -10,6 +10,7 @@ export class CochesComponent
 {
   public coche: Coche;
   public coches:Array<Coche>;
+  public articulos;
   constructor(private _peticionesService: PeticionesService)
   {
     this.coche = new Coche("","","");
@@ -20,7 +21,18 @@ export class CochesComponent
   }
   ngOnInit ()
   {
-    console.log(this._peticionesService.getPrueba());
+    //this._peticionesService.getArticulos().subscribe(
+      //result =>
+    //  {
+    //    console.log(result);
+    //  },
+      //error =>
+      //{
+    //    var error = <any>error;
+      //  console.log(error);
+      //}
+    //);
+
   }
   onSubmit()
   {
